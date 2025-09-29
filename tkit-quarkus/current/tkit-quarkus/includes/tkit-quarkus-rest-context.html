@@ -168,15 +168,15 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-enabled"><code>tkit.rs.context.token.enabled</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-enabled"><code>tkit.rs.context.enabled</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Enable or disable token parsing.</p>
+<p>Enable or disable rest context.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_ENABLED</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_ENABLED</code></p>
 </div>
 </div>
 </div></div></td>
@@ -185,100 +185,66 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-mandatory"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-mandatory"><code>tkit.rs.context.token.mandatory</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-correlation-id-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-correlation-id-enabled"><code>tkit.rs.context.correlation-id.enabled</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Make the token mandatory (not null)</p>
+<p>Enable or disable correlation ID.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_MANDATORY</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_CORRELATION_ID_ENABLED</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>true</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-type"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-type"><code>tkit.rs.context.token.type</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-correlation-id-header-param-name"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-correlation-id-header-param-name"><code>tkit.rs.context.correlation-id.header-param-name</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Type of the token for new created token</p>
+<p>Header parameter for correlation ID.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_TYPE</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_CORRELATION_ID_HEADER_PARAM_NAME</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>principal-token</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>x-correlation-id</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-verify"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-verify"><code>tkit.rs.context.token.verify</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-business-context-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-business-context-enabled"><code>tkit.rs.context.business-context.enabled</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Verify token</p>
+<p>Enable or disable business context.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_VERIFY</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_BUSINESS_CONTEXT_ENABLED</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>true</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-enabled"><code>tkit.rs.context.token.public-key-location.enabled</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-business-context-default"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-business-context-default"><code>tkit.rs.context.business-context.default</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Use token realm for the public key.</p>
+<p>The default business parameter.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PUBLIC_KEY_LOCATION_ENABLED</code></p>
-</div>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-suffix"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-suffix"><code>tkit.rs.context.token.public-key-location.suffix</code></a></span></p>
-</div>
-<div class="openblock description">
-<div class="content">
-<div class="paragraph">
-<p>Public key server suffix</p>
-</div>
-<div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PUBLIC_KEY_LOCATION_SUFFIX</code></p>
-</div>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>/protocol/openid-connect/certs</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-url"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-url"><code>tkit.rs.context.token.public-key-location.url</code></a></span></p>
-</div>
-<div class="openblock description">
-<div class="content">
-<div class="paragraph">
-<p>Public key server url</p>
-</div>
-<div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PUBLIC_KEY_LOCATION_URL</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_BUSINESS_CONTEXT_DEFAULT</code></p>
 </div>
 </div>
 </div></div></td>
@@ -287,88 +253,37 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-header-param"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-header-param"><code>tkit.rs.context.token.header-param</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-business-context-header-param-name"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-business-context-header-param-name"><code>tkit.rs.context.business-context.header-param-name</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Principal token header parameter.</p>
+<p>Header parameter for business context.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_HEADER_PARAM</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_BUSINESS_CONTEXT_HEADER_PARAM_NAME</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>apm-principal-token</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>x-business-context</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-parser-error-unauthorized"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-parser-error-unauthorized"><code>tkit.rs.context.token.parser-error-unauthorized</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-add-token-to-context"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-add-token-to-context"><code>tkit.rs.context.add-token-to-context</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Throw Unauthorized exception for any parser error. Return StatusCode 401.</p>
+<p>Add token to application context.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PARSER_ERROR_UNAUTHORIZED</code></p>
-</div>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-required-error-unauthorized"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-required-error-unauthorized"><code>tkit.rs.context.token.required-error-unauthorized</code></a></span></p>
-</div>
-<div class="openblock description">
-<div class="content">
-<div class="paragraph">
-<p>Throw Unauthorized exception for required error. Return StatusCode 401.</p>
-</div>
-<div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_REQUIRED_ERROR_UNAUTHORIZED</code></p>
-</div>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer-error-unauthorized"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer-error-unauthorized"><code>tkit.rs.context.token.check-tokens-issuer-error-unauthorized</code></a></span></p>
-</div>
-<div class="openblock description">
-<div class="content">
-<div class="paragraph">
-<p>Throw Unauthorized exception if access token issuer does not equal to principal token issuer. Return StatusCode 401.</p>
-</div>
-<div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_CHECK_TOKENS_ISSUER_ERROR_UNAUTHORIZED</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_ADD_TOKEN_TO_CONTEXT</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>true</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer"><code>tkit.rs.context.token.check-tokens-issuer</code></a></span></p>
-</div>
-<div class="openblock description">
-<div class="content">
-<div class="paragraph">
-<p>Compare access token issuer with principal token issuer.</p>
-</div>
-<div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_CHECK_TOKENS_ISSUER</code></p>
-</div>
-</div>
-</div></div></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -729,15 +644,15 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-enabled"><code>tkit.rs.context.enabled</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-enabled"><code>tkit.rs.context.token.enabled</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Enable or disable rest context.</p>
+<p>Enable or disable token parsing.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_ENABLED</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_ENABLED</code></p>
 </div>
 </div>
 </div></div></td>
@@ -746,66 +661,100 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-correlation-id-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-correlation-id-enabled"><code>tkit.rs.context.correlation-id.enabled</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-mandatory"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-mandatory"><code>tkit.rs.context.token.mandatory</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Enable or disable correlation ID.</p>
+<p>Make the token mandatory (not null)</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_CORRELATION_ID_ENABLED</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_MANDATORY</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-correlation-id-header-param-name"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-correlation-id-header-param-name"><code>tkit.rs.context.correlation-id.header-param-name</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-type"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-type"><code>tkit.rs.context.token.type</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Header parameter for correlation ID.</p>
+<p>Type of the token for new created token</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_CORRELATION_ID_HEADER_PARAM_NAME</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_TYPE</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>x-correlation-id</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>principal-token</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-business-context-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-business-context-enabled"><code>tkit.rs.context.business-context.enabled</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-verify"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-verify"><code>tkit.rs.context.token.verify</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Enable or disable business context.</p>
+<p>Verify token</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_BUSINESS_CONTEXT_ENABLED</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_VERIFY</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-business-context-default"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-business-context-default"><code>tkit.rs.context.business-context.default</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-enabled"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-enabled"><code>tkit.rs.context.token.public-key-location.enabled</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>The default business parameter.</p>
+<p>Use token realm for the public key.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_BUSINESS_CONTEXT_DEFAULT</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PUBLIC_KEY_LOCATION_ENABLED</code></p>
+</div>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-suffix"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-suffix"><code>tkit.rs.context.token.public-key-location.suffix</code></a></span></p>
+</div>
+<div class="openblock description">
+<div class="content">
+<div class="paragraph">
+<p>Public key server suffix</p>
+</div>
+<div class="paragraph">
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PUBLIC_KEY_LOCATION_SUFFIX</code></p>
+</div>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>/protocol/openid-connect/certs</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-url"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-public-key-location-url"><code>tkit.rs.context.token.public-key-location.url</code></a></span></p>
+</div>
+<div class="openblock description">
+<div class="content">
+<div class="paragraph">
+<p>Public key server url</p>
+</div>
+<div class="paragraph">
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PUBLIC_KEY_LOCATION_URL</code></p>
 </div>
 </div>
 </div></div></td>
@@ -814,37 +763,88 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-business-context-header-param-name"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-business-context-header-param-name"><code>tkit.rs.context.business-context.header-param-name</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-header-param"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-header-param"><code>tkit.rs.context.token.header-param</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Header parameter for business context.</p>
+<p>Principal token header parameter.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_BUSINESS_CONTEXT_HEADER_PARAM_NAME</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_HEADER_PARAM</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">string</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>x-business-context</code></p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>apm-principal-token</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><a id="tkit-quarkus-rest-context_tkit-rs-context-add-token-to-context"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-add-token-to-context"><code>tkit.rs.context.add-token-to-context</code></a></span></p>
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-parser-error-unauthorized"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-parser-error-unauthorized"><code>tkit.rs.context.token.parser-error-unauthorized</code></a></span></p>
 </div>
 <div class="openblock description">
 <div class="content">
 <div class="paragraph">
-<p>Add token to application context.</p>
+<p>Throw Unauthorized exception for any parser error. Return StatusCode 401.</p>
 </div>
 <div class="paragraph">
-<p>Environment variable: <code>TKIT_RS_CONTEXT_ADD_TOKEN_TO_CONTEXT</code></p>
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_PARSER_ERROR_UNAUTHORIZED</code></p>
+</div>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-required-error-unauthorized"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-required-error-unauthorized"><code>tkit.rs.context.token.required-error-unauthorized</code></a></span></p>
+</div>
+<div class="openblock description">
+<div class="content">
+<div class="paragraph">
+<p>Throw Unauthorized exception for required error. Return StatusCode 401.</p>
+</div>
+<div class="paragraph">
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_REQUIRED_ERROR_UNAUTHORIZED</code></p>
+</div>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer-error-unauthorized"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer-error-unauthorized"><code>tkit.rs.context.token.check-tokens-issuer-error-unauthorized</code></a></span></p>
+</div>
+<div class="openblock description">
+<div class="content">
+<div class="paragraph">
+<p>Throw Unauthorized exception if access token issuer does not equal to principal token issuer. Return StatusCode 401.</p>
+</div>
+<div class="paragraph">
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_CHECK_TOKENS_ISSUER_ERROR_UNAUTHORIZED</code></p>
 </div>
 </div>
 </div></div></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a id="tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer"></a> <span class="property-path"><a href="#tkit-quarkus-rest-context_tkit-rs-context-token-check-tokens-issuer"><code>tkit.rs.context.token.check-tokens-issuer</code></a></span></p>
+</div>
+<div class="openblock description">
+<div class="content">
+<div class="paragraph">
+<p>Compare access token issuer with principal token issuer.</p>
+</div>
+<div class="paragraph">
+<p>Environment variable: <code>TKIT_RS_CONTEXT_TOKEN_CHECK_TOKENS_ISSUER</code></p>
+</div>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">boolean</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><code>false</code></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
